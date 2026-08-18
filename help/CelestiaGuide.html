@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Celestia Guide</title>
@@ -41,7 +44,7 @@
                                         <br><a href="#whatlabel">- Labels to display</a>
                                         <br><a href="#whatrender">- What items to render</a>
                                         <br><a href="#displayoptions">- Render/Display options</a>
-                                        <br><a href="#multiview">- Multiview options</a>
+                                        <br><a href="#multiview">- MultiView options</a>
                                         <br><a href="#otherfunctions">- Other functions</a>
                                     </div>
                                     <br><a href="#joystick">Joystick Controls</a>
@@ -72,14 +75,14 @@
                     <td id="page-right">
                         <!-- PAGE CONTENT START -->
                         <img src="CelestiaGuide/guide.gif" alt="Celestia" id="guidepix" height="100" width="200">
-                        <h1 id="introduction">Getting Started: Celestia</h1>
+                        <h1 id="introduction">Getting Started</h1>
                         <div class="txtcontent">
-                            <b> A real-time space simulation that lets you experience our universe in three dimensions.
+                            <b>The free space simulator that lets you explore our universe in three dimensions.
                             <br>
-                            Copyright &copy; 2001-2023, Celestia Development Team</b>
+                            Copyright &copy; 2001-2026, Celestia Development Team</b>
                             <br>
                             <br>
-                            <b>Celestia web site:</b> <a href="https://celestiaproject.space/">https://celestiaproject.space/</a>
+                            <b>Celestia website:</b> <a href="https://celestiaproject.space/">https://celestiaproject.space/</a>
                             <br>
                             <b>Celestia documentation:</b> <a href="https://celestiaproject.space/guides.html">https://celestiaproject.space/guides.html</a>
                             <br>
@@ -95,7 +98,7 @@
                             <br>
                             <br>
                             <div class="list">
-                                <h2>Getting Started Topics</h2>
+                                <h2>Topics</h2>
                                 <ol>
                                     <li>
                                         <a href="javascript:animatedcollapse_toggle('installing')">Installing Celestia</a>
@@ -110,53 +113,38 @@
                                                 <li>
                                                     <b>Windows</b>
                                                     <br>
-                                                    - Release version <b>1.6.x</b> is available in the native Windows User Interface. For Win64(x64) it can be found at the Celestia web site in the downloads section. It is also available from the Microsoft store. Other sites contain pre-built versions with special options, including a Win32(x86) version. Check the Celestia forums for additional links and downloads. After downloading the installation executable, run the .exe file to install Celestia. Celestia 1.6.x will work when installed in any version of Windows from Vista and later; however, more recent releases of Celestia are geared to and tested on recent releases of Windows. If you are running an older version of Windows, you may need to run a previous version of Celestia. <i>Be aware that Windows is protective of software installed in the Program Files directory tree.</i> You will have far fewer problems modifying Celestia if you install it somewhere else, for example creating the folder "C:\MyPrograms" and installing Celestia there. The installation program will let you browse to wherever you want to install Celestia.
+                                                    Release version <b>1.6.x</b> is available with a native Windows user interface. For Win64(x64) it can be found at the Celestia website on the download page. Other sites contain pre-built versions with special options, including a Win32(x86) version. Check the Celestia forums for additional links and downloads. After downloading the installation executable, run the .exe file to install Celestia. Celestia 1.6.x will work when installed in any version of Windows from Vista and later; however, more recent releases of Celestia are geared to and tested on recent releases of Windows. If you are running an older version of Windows, you may need to run a previous version of Celestia. <i>Be aware that Windows is protective of software installed in the Program Files directory tree.</i> You will have far fewer problems modifying Celestia if you install it somewhere else, for example creating the folder "C:\MyPrograms" and installing Celestia there. The installation program will let you browse to wherever you want to install Celestia.
                                                     <br>
                                                     <br>
-                                                    - Developmental version <b>1.7.x</b> is available in both native Windows user interface and Qt 6 user interface. The compiled files are found on the Celestia GitHub repository through GitHub actions and require a GitHub account (free) to download. From the Celestia GitHub page, click on the <i>Actions</i> link at the top. You will be presented with a list of recent workflows. Click on the link to the workflow from the latest update (near the top of the list). Under <i>Artifacts</i> there are two sets of files beginning with "celestia-windows-x64" (64-bit) or "celestia-windows-x86" (32-bit). Both user interfaces for that version of Windows are available as separate files. First create a folder for programs, for example "C:\MyPrograms". In this folder create a new folder named "Celestia".
-                                                    <br>
-                                                    <br>
-                                                    <ul>
-                                                        <li>
-                                                            For the native Windows user interface, download the <i>wingui</i> file. Extract the contents of the file into your Celestia folder. The Celestia program can be started by clicking on the <i>celestia-win.exe</i> file in the Celestia folder. You can create links or menu items to this file for easier starting. <b>Note:</b> Be sure your active directory is the Celestia folder when starting Celestia - or configuration files, data files, textures and models will not be found.
-                                                        </li>
-                                                        <li>
-                                                            For the Qt Windows user interface, download the <i>qt6gui</i> file. Extract the contents of the file into your Celestia folder. The Celestia program can be started by clicking on the <i>celestia-qt6.exe</i> file in the Celestia folder. You can create links or menu items to this file for easier starting. <b>Note:</b> Be sure your active directory is the Celestia folder when starting Celestia - or configuration files, data files, textures and models will not be found.
-                                                        </li>
-                                                    </ul>
-                                                    <br>
-                                                    This will complete the installation of the Celestia program section. <b>The developmental version does not come with the data files needed to run Celestia.</b> See <a href="#morecontent"><u>Additional Celestia Content</u></a> for information to download and install these necessary files.
-                                                </li>
+                                                    Developmental version <b>1.7.0</b> is available with both a native Windows user interface and a Qt 6 user interface. You can download an installer for 1.7.0 from the Celestia website on the download page, and you have the option of downloading both Win64(x64) and Win32(x86) versions. Once the installer has finished its job, navigate to the folder where Celestia was downloaded to, and you'll see two executables, one named 'celestia-qt6.exe' and another named 'celestia-win.exe', corresponding to the native Windows user interface and the Qt 6 user interface, respectively. You can run either of these executables to start Celestia. The Qt 6 user interface has more features than the native Windows user interface.
+                                                </li><br>
                                                 <li><b>Linux and Unix</b>
                                                     <br>
-                                                    - Release version <b>1.6.x</b> can be found in four user interface styles. <b>GTK</b> is a full windowed graphical user interface with a menu and dialogs. <b>Gnome</b> is a full GTK interface that has been integrated into the Gnome desktop. <b>KDE</b> is a full windowed graphical user interface with menus, toolbars and integration into the KDE3 desktop. <b>GLUT</b> is a bare-bone core without menus or toolbars, using special keys and the mouse to navigate within Celestia. Many Linux distributions maintain a copy of Celestia in their software repositories, see the repository content lists for your distribution. There is also an experimental AppImage file which is a single executable file for the GTK interface with the program, data content and most of the libraries needed to run it on many Linux distributions. It can be found at <u><a href="https://download.opensuse.org/repositories/home:/munix9/AppImage/">https://download.opensuse.org/repositories/home:/munix9/AppImage/</a></u>. Simply download the AppImage file, change the file properties to executable, and execute the program. The program is not limited to the planetary textures and spacecraft found in the program release, but can access <a href="#morecontent"><u>additional Celestia content</u></a>. The AppImage program responds to the <a href= "#cmdlineoptions"><u>Command Line Options</u></a> of its GTK user interface. By using the <i>dir</i> and <i>extrasdir</i> options you can create directories to access additional data, images, scripts and models from the AppImage.
+                                                    Release version <b>1.6.x</b> can be found in four user interface styles. <b>GTK</b> is a full windowed graphical user interface with a menu and dialogs. <b>Gnome</b> is a full GTK interface that has been integrated into the Gnome desktop. <b>KDE</b> is a full windowed graphical user interface with menus, toolbars and integration into the KDE3 desktop. <b>GLUT</b> is a bare-bone core without menus or toolbars, using special keys and the mouse to navigate within Celestia. Many Linux distributions maintain a copy of Celestia in their software repositories, see the repository content lists for your distribution. There is also an experimental AppImage file which is a single executable file for the GTK interface with the program, data content and most of the libraries needed to run it on many Linux distributions. It can be found at <u><a href="https://download.opensuse.org/repositories/home:/munix9/AppImage/">https://download.opensuse.org/repositories/home:/munix9/AppImage/</a></u>. Simply download the AppImage file, change the file properties to executable, and execute the program. The program is not limited to the planetary textures and spacecraft found in the program release, but can access <a href="#morecontent"><u>additional Celestia content</u></a>. The AppImage program responds to the <a href= "#cmdlineoptions"><u>Command Line Options</u></a> of its GTK user interface. By using the <i>dir</i> and <i>extrasdir</i> options you can create directories to access additional data, images, scripts and models from the AppImage.
                                                     <br>
-                                                    <b>Note:</b> You must separately obtain and install openGL and the libraries needed for each user interface. There are several optional helper programs to Celestia - these may/may not have been compiled into your Celestia version.  They will require additional libraries. These will be found in your Linux distribution's software repository. Often the package manager (software install program) for a Linux distribution has automated these repositories, so installing Celestia will automatically call for, download and install the additional needed packages.
+                                                    <b>Note:</b> You must separately obtain and install OpenGL and the libraries needed for each user interface. There are several optional helper programs to Celestia - these may/may not have been compiled into your Celestia version.  They will require additional libraries. These will be found in your Linux distribution's software repository. Often the package manager (software install program) for a Linux distribution has automated these repositories, so installing Celestia will automatically call for, download and install the additional needed packages.
                                                     <br>
                                                     <b>Note:</b> In the case of Ubuntu and other Debian derivatives, if downloading directly from the distribution's repositories, Celestia is split into free and non-free versions because of their strict interpretation of how licensing should be handled. Both are needed for Celestia to work properly.
                                                     <br>
                                                     <br>
-                                                    - Developmental version <b>1.7.x</b> can be found in two user interface styles. <b>Qt</b> is a more advanced, full windowed graphical user interface with menus, toolbars and bookmarks. <b>SDL</b> is a bare-bone core without menus or toolbars, using special keys and the mouse to navigate within Celestia. Versions are available for Debian, Ubuntu and openSUSE via the openSUSE Open Build Service. See the Celestia website download section for links and instructions. The files can also be directly downloaded from the software repository at <u><a href="https://download.opensuse.org/repositories/home:/munix9:/unstable/">https://download.opensuse.org/repositories/home:/munix9:/unstable/</a></u>. There is also an experimental AppImage file which is a single executable file for the Qt interface with the program, data content and most of the libraries needed to run it on many Linux distributions. It can be found at <u><a href="https://download.opensuse.org/repositories/home:/munix9:/unstable/AppImage/">https://download.opensuse.org/repositories/home:/munix9:/unstable/AppImage/</a></u>. Simply download the AppImage file, change the file properties to executable, and execute the program. The program is limited to the planetary textures and spacecraft found in the program directories, it cannot access <a href="#morecontent"><u>additional Celestia content</u></a>.
-                                                </li>
+                                                    Developmental version <b>1.7.0</b> can be found in two user interface styles. <b>Qt</b> is a more advanced, full windowed graphical user interface with menus, toolbars and bookmarks. <b>SDL</b> is a bare-bone core without menus or toolbars, using special keys and the mouse to navigate within Celestia. Versions are available for Debian, Ubuntu and openSUSE via the openSUSE Open Build Service. See the Celestia website download section for links and instructions. The files can also be directly downloaded from the software repository at <u><a href="https://download.opensuse.org/repositories/home:/munix9:/unstable/">https://download.opensuse.org/repositories/home:/munix9:/unstable/</a></u>. There is also an experimental AppImage file which is a single executable file for the Qt interface with the program, data content and most of the libraries needed to run it on many Linux distributions. It can be found at <u><a href="https://download.opensuse.org/repositories/home:/munix9:/unstable/AppImage/">https://download.opensuse.org/repositories/home:/munix9:/unstable/AppImage/</a></u>. Simply download the AppImage file, change the file properties to executable, and execute the program. The program is limited to the planetary textures and spacecraft found in the program directories, it cannot access <a href="#morecontent"><u>additional Celestia content</u></a>.
+                                                </li><br>
                                                 <li><b>macOS</b>
                                                     <br>
-                                                    - Release version <b>1.6.x</b> is available in the native macOS user interface. It can be downloaded from the Celestia website in the downloads section. It is also available from the Celestia GitHub repository. On the right side of the main page is a "Releases" section which provides a link to program releases. This link will provide a page of the available releases and a list of "assets" for each release which includes the macOS file. The file is a zipped bundle of the program, data files, planetary textures and simple spacecraft. Download the file, unzip it and place the contents into the proper macOS directories to access the program.
+                                                    Release version <b>1.6.x</b> is available in the native macOS user interface. It can be downloaded from the Celestia website in the downloads section. It is also available from the Celestia GitHub repository. On the right side of the main page is a "Releases" section which provides a link to program releases. This link will provide a page of the available releases and a list of "assets" for each release which includes the macOS file. The file is a zipped bundle of the program, data files, planetary textures and simple spacecraft. Download the file, unzip it and place the contents into the proper macOS directories to access the program.
                                                     <br>
                                                     <br>
-                                                    - Developmental version <b>1.7.x</b> is not available in the native macOS user interface.  You must use the cross-platform Qt interface version. A user interface modified version of 1.7.x can be downloaded from the Celestia mobile website in the download section. It comes complete with data, planetary textures and models. It has its own release numbers and release schedule, and is slightly behind the code found in the Celestia GitHub repository.
-                                                </li>
+                                                    Developmental version <b>1.7.0</b> is available in  the native macOS user interface. It can be downloaded from the Mac App Store. It is also available from the MobileCelestia (iOS, iPadOS, macOS) GitHub repository: <u><a href="https://github.com/celestiamobile/MobileCelestia/releases">https://github.com/celestiamobile/MobileCelestia/releases</a></u>. It comes complete with data, planetary textures and models. It has its own version numbers and update schedule, and can sometimes be slightly out of date with the latest code changes in the Celestia GitHub repository.
+                                                </li><br>
                                                 <li><b>iOS</b>
                                                     <br>
-                                                    iOS is an Apple Inc. operating system used on iPhone, iPad, etc. Celestia has been ported to this operating system as a separate project. It is based on Celestia 1.7.0, but has its own release numbers, release schedule and additional code base. It comes complete with data, planetary textures and models. Release version <b>1.5.x</b> can be downloaded from the Celestia mobile website in the download section. It can also be directly downloaded from the Apple App Store.
-                                                </li>
+                                                    iOS is an Apple Inc. operating system used on iPhone, iPad, etc. Celestia has been ported to this operating system as a separate project. It is based on Celestia 1.7.0, but has its own version numbers, update schedule and additional code base. It comes complete with data, planetary textures and models. It can be downloaded from the App Store.
+                                                </li><br>
                                                 <li><b>Android</b>
                                                     <br>
-                                                    Android is a Google operating system used on many cell phones. Celestia has been ported to this operating system as a separate project. It is based on Celestia 1.7.0, but has its own release numbers, release schedule and additional code base.  It comes complete with data, planetary textures and models. Release version <b>1.5.x</b> can be downloaded from the Celestia mobile website in the download section. It can also be directly downloaded as an app from Google Play.
+                                                    Android is a Google operating system used on many phones and tablets. Celestia has been ported to this operating system as a separate project. It is based on Celestia 1.7.0, but has its own version numbers, update schedule and additional code base. It can be downloaded as an app from Google Play and F-Droid.
                                                 </li>
                                             </ul>
-                                            <br>
-                                            <br>
-                                            <input value=" Close " class="closebtn" onclick="javascript:animatedcollapse_toggle('installing')" type="button">
                                         </div>
                                     </li>
                                     <li>
@@ -3064,7 +3052,7 @@
                         </div>
                         <h1 id="resources">Celestia resources</h1>
                         <div class="txtcontent">
-                            <b>Celestia Web Site:</b> <a href="https://celestiaproject.space/">https://celestiaproject.space/</a>
+                            <b>Celestia Website:</b> <a href="https://celestiaproject.space/">https://celestiaproject.space/</a>
                             <br>
                             <b>Celestia User Forums:</b> <a href="https://celestiaproject.space/forum/">https://celestiaproject.space/forum/</a>
                             <br>
@@ -3074,15 +3062,13 @@
                             <br>
                             <b>Celestia Motherlode:</b> <a href="http://www.celestiamotherlode.net/">http://www.celestiamotherlode.net/</a>
                             <br>
-                            <b>Celestia Bug Tracking (GitHub.com):</b> <a href="https://github.com/CelestiaProject/Celestia/issues">https://github.com/CelestiaProject/Celestia/issues</a>
-                            <br>
-                            <b>Celestia Feature Requests (GitHub.com):</b> <a href="https://github.com/CelestiaProject/Celestia/issues">https://github.com/CelestiaProject/Celestia/issues</a>
+                            <b>Celestia Bug Reports and Feature Requests (GitHub):</b> <a href="https://github.com/CelestiaProject/Celestia/issues">https://github.com/CelestiaProject/Celestia/issues</a>
                             <br>
                             <b>Celestia.mobi (Site):</b> <a href="https://celestia.mobi/">https://celestia.mobi/</a>
                             <br>
                             <b>Celestia.mobi Addons:</b> <a href="https://celestia.mobi/resources/categories">https://celestia.mobi/resources/categories</a>
                             <br>
-                            <b>Celestia.mobi Addon Submissions (GitHub.com):</b> <a href="https://github.com/levinli303/celestia.mobi/issues">https://github.com/levinli303/celestia.mobi/issues</a>
+                            <b>Celestia.mobi Addon Submissions:</b> <a href="https://celestia.mobi/submit-addon">https://celestia.mobi/submit-addon</a>
                         </div>
                         <h1 id="license">License</h1>
                         <div class="txtcontent">
@@ -3552,7 +3538,7 @@
                             <!--br>
                                 <a href="http://www.shatters.net/%7Eclaurel/">http://www.shatters.net/~claurel/</a-->
                             <br>
-                            <a href="https://celestiaproject.space/">https://celestiaproject.space/</a>.
+                            <a href="https://celestiaproject.space/">https://celestiaproject.space/</a>
                             <br>
                             <br>
                             Special thanks go to all Celestia users who submit bug reports, suggestions, and fixes. Celestia wouldn't be the program it is today, without their help.
